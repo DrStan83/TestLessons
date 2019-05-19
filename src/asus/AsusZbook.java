@@ -1,4 +1,6 @@
-package testobject1;
+package asus;
+
+import asus.Asus;
 
 public class AsusZbook extends Asus {
 
@@ -24,11 +26,11 @@ public class AsusZbook extends Asus {
     }
 
     public void on() {
-        print(" I am On. My Model " + name);
+        print(" I am On. My Model " + name + "My HDD Space " + hdd + "Gb" + " My ram " + ram + "Mb");
     }
 
     public void off() {
-        print("I am Off" + name);
+        print("I am Off" + name + "I have Wi-Fi " + wiFi + " I have Integrated Video " + integratedVideo);
     }
 
 

@@ -1,10 +1,10 @@
-package testobject1;
+package devices;
 
 abstract class Computer extends DeviceWhithOS {
 
-    private String mBoard;
-    private boolean cdRom;
-    private boolean integratedVideo;
+    protected String mBoard;
+    protected boolean cdRom;
+    protected boolean integratedVideo;
 
     public Computer(){
 
@@ -62,7 +62,6 @@ abstract class Computer extends DeviceWhithOS {
         System.out.println("Модель Материнской платы " + stm);
     }
 
-    public abstract void insertCd();
     public abstract void readCD();
     public abstract void blueScreen();
     public abstract void reboot();

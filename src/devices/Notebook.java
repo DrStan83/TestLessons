@@ -1,9 +1,11 @@
-package testobject1;
+package devices;
 
 public abstract class Notebook extends Computer{
     protected int cdSSD;
-    protected double wersionUsb;
+    protected double versionUsb;
     protected boolean wiFi;
+
+    public abstract void batteryCharge();
 
     public Notebook() {
     }
@@ -16,20 +18,20 @@ public abstract class Notebook extends Computer{
         this.cdSSD = gb;
     }
 
-    public double getWersionUsb(){
-        return wersionUsb;
+    public double getVersionUsb(){
+        return versionUsb;
     }
 
-    public void setWersionUsb(double werUsb){
-        if(werUsb == 2.0 || werUsb == 3.0){
-            this.wersionUsb = werUsb;
+    public void setVersionUsb(double verUsb){
+        if(verUsb == 2.0 || verUsb == 3.0){
+            this.versionUsb = verUsb;
         }else{
-            System.out.println("Wersion USB not Supported");
+            System.out.println("Version USB not Supported");
         }
     }
 
     public boolean getwiFi(){
-        return getwiFi();
+        return wiFi;
     }
 
     public void setWiFi(boolean wifi){
@@ -40,6 +42,6 @@ public abstract class Notebook extends Computer{
         }
     }
 
-        public abstract void batteryCharge();
+
 
 }

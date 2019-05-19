@@ -1,4 +1,4 @@
-package testobject1;
+package devices;
 
 public abstract class DeviceWhithOS {
     protected String opSystem;
