@@ -5,23 +5,21 @@ abstract class Computer extends DeviceWhithOS {
     protected String mBoard;
     protected boolean cdRom;
     protected boolean integratedVideo;
+    protected double versionUsb;
 
-    public Computer(){
 
+    public double getVersionUsb(){
+        return versionUsb;
     }
 
-
-    public Computer(String name, int ram, int hdd, double weight, String mBoard, String corpusMaterial, boolean cdRom, boolean integratedVieo) {
-        this.name = name;
-        this.ram = ram;
-        this.hdd = hdd;
-        this.weight = weight;
-        this.mBoard = mBoard;
-        this.corpusMaterial = corpusMaterial;
-        this.cdRom = cdRom;
-        this.integratedVideo = integratedVieo;
-
+    public void setVersionUsb(double verUsb){
+        if(verUsb == 2.0 || verUsb == 3.0){
+            this.versionUsb = verUsb;
+        }else{
+            System.out.println("Version USB not Supported");
+        }
     }
+
 
     public boolean getIntegratedVideo() {
         return integratedVideo;
@@ -62,9 +60,13 @@ abstract class Computer extends DeviceWhithOS {
         System.out.println("Модель Материнской платы " + stm);
     }
 
-    public abstract void readCD();
-    public abstract void blueScreen();
-    public abstract void reboot();
+    public void readCD() {
+        if (cdRom == true) {
+            print("CD Disc Read");
+        } else {
+            print("CD Rom is not Find in this Model");
+        }
+    }
 
 
 

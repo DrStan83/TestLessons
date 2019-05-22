@@ -8,17 +8,8 @@ public abstract class DeviceWhithOS {
     protected int ram;
     protected int hdd;
 
-    protected DeviceWhithOS(String name, String opSystem, int ram, int hdd, double weight, String corpusMaterial) {
-        this.name = name;
-        this.opSystem = opSystem;
-        this.ram = ram;
-        this.hdd = hdd;
-        this.weight = weight;
-        this.corpusMaterial = corpusMaterial;
-    }
 
     protected DeviceWhithOS() {
-
     }
 
     public String getName() {
@@ -88,15 +79,22 @@ public abstract class DeviceWhithOS {
         System.out.println(str);
     }
 
-    public abstract void load();
- //       print("I am Load. My name " + opSystem);
+    public void load() {
+              print("I am Load. My name " + opSystem);
+    }
+
+    public  void on(){
+            print(" I am On. My Model " + name + "My HDD Space " + hdd + "Gb" + " My ram " + ram + "Mb");
+        }
 
 
-    public abstract void on();
- //       print(" I am On. My Model " + name);
+    public void reboot() {
+        off();
+        on();
+        load();
+    }
 
-
-    public abstract void off();
-  //      print("I am Off" + name);
-
+    public void off(){
+        print("I'm off.  My Corpus Material " + corpusMaterial);
+    }
 }

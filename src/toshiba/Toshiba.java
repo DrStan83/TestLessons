@@ -6,17 +6,13 @@ public abstract class Toshiba extends Notebook {
     protected int speakerPower_Om;
     protected double blueToothVer;
 
-   public abstract void playSound();
-   public abstract void BlueToothOn();
-
-    public Toshiba(){
-
+    public void BlueToothOn(){
+        print("Bluetooth " + blueToothVer + " on and you may connect device");
     }
 
-    public Toshiba(int speakerPower_Om, double blueToothVer){
-        this.speakerPower_Om = speakerPower_Om;
-        this.blueToothVer = blueToothVer;
 
+    public void playSound(){
+        print("Now play track and speaker power = " + speakerPower_Om + "Om");
     }
 
     public int getSpeakerPower_Om(){
