@@ -4,6 +4,15 @@ public abstract class Notebook extends Computer{
     protected int cdSSD;
     protected boolean wiFi;
 
+    public void connectWiFi(boolean connectWifi){
+        if(connectWifi== true){
+            System.out.println("Wi-Fi connected");
+        }else {
+            System.out.println("Wi-Fi disconnected");
+        }
+
+    }
+
     public void batteryCharge() {
         print("Battery "+getName()+" Charge");
     }
@@ -25,11 +34,9 @@ public abstract class Notebook extends Computer{
         return wiFi;
     }
     public void setWiFi(boolean wifi){
-        if(wifi == true){
-            System.out.println("Wi-Fi connected");
-        }else {
-            System.out.println("Wi-Fi disconnected");
-        }
+        this.wiFi = wifi;
+
+
     }
 
 

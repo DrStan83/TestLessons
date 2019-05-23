@@ -31,5 +31,12 @@ abstract class Asus extends Notebook {
         this.colorLightKeyboard = colorKey;
     }
 
+
+    public void aboutModel (){
+        print("My Model " + getName() + "  HDD " + getHdd() + "  RAM " + getRam() + "  Corpus " + getCorpusMaterial());
+        print("I Have Wi-Fi " + getwiFi() + "  CdRom " + getCdRom() + " " + getCdSSD() + " Gb " + "Finger Scanner  "+getFingerScanner() + "  USB " + getVersionUsb());
+        print(" My keyboard " + getColorLightKeyboard() + " OS " + getOpSystem() + " MainBoard " +getmBoard());
+    }
+
 }
 

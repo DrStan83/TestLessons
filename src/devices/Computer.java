@@ -26,12 +26,7 @@ abstract class Computer extends DeviceWhithOS {
     }
 
     public void setIntegratedVieo(Boolean missOrNot) {
-        if (integratedVideo == true) {
-            this.integratedVideo = missOrNot;
-            System.out.println("You may choose integratedVideo");
-        } else {
-            System.out.println("In System miss integratedVideo");
-        }
+        this.integratedVideo = missOrNot;
     }
 
     public Boolean getCdRom() {
@@ -39,12 +34,8 @@ abstract class Computer extends DeviceWhithOS {
     }
 
     public void setCdRom(Boolean prezOrEps) {
-        if (prezOrEps == true) {
             this.cdRom = prezOrEps;
-            System.out.println("CdRom is Ready!!!");
-        } else {
-            System.out.println("CdRom is missing");
-        }
+
     }
 
     public String getmBoard() {
@@ -57,7 +48,6 @@ abstract class Computer extends DeviceWhithOS {
         } else {
             this.mBoard = stm;
         }
-        System.out.println("Модель Материнской платы " + stm);
     }
 
     public void readCD() {

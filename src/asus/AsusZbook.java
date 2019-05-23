@@ -6,7 +6,7 @@ public class AsusZbook extends Asus {
 
   @Override
     public void off() {
-        print("I am Off" + name + "I have Wi-Fi " + wiFi + " I have Integrated Video " + integratedVideo);
+        print("I am Off" + getName() + "I have Wi-Fi " + getwiFi() + " I have Integrated Video " + getIntegratedVideo());
     }
 
 

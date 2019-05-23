@@ -10,26 +10,31 @@ public class TestClass {
         AsusZbook zbook = new AsusZbook();
         zbook.setOpSystem("Windows 10");
         zbook.setName("Zbook 17");
+        zbook.setWeight(3.3);
+        zbook.setHdd(1024);
+        zbook.setRam(4096);
+        zbook.setCdSSD(500);
+        zbook.setCdRom(true);
+        zbook.setmBoard("Asus X581GO");
+        zbook.setWiFi(true);
+        zbook.setColorLightKeyboard("Red");
+        zbook.setCorpusMaterial("Aluminium");
+        zbook.setVersionUsb(3.0);
+        zbook.setFingerScanner(true);
+        zbook.setIntegratedVieo(false);
+
+
         zbook.on();
         zbook.load();
-        zbook.activateFingerScan();
-        zbook.batteryCharge();
-        zbook.readCD();
-        zbook.changeColorKey();
-        zbook.blueScreen();
+        zbook.connectWiFi(true);
         zbook.off();
-        zbook.ScanFinger(true);
-
-        ToshibaSatelit satelit = new ToshibaSatelit("Windows 7", "Toshiba Satelit", 2.2, "Plastic", 8192, 500, 250, 2.0, true, "AsRock", true, true, 8,2.0);
-        satelit.on();
-        satelit.load();
-        satelit.playSound();
-        satelit.batteryCharge();
-        satelit.BlueToothOn();
-        satelit.readCD();
-        satelit.blueScreen();
-        satelit.off();
-
+        zbook.readCD();
+ //       zbook.reboot();
+        zbook.ScanFinger(false);
+        zbook.batteryCharge();
+ //       zbook.blueScreen();
+        zbook.changeColorKey("Yellow");
+        zbook.aboutModel();
 
 
     }

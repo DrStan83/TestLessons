@@ -71,7 +71,6 @@ public abstract class DeviceWhithOS {
         } else {
             this.corpusMaterial = cM;
         }
-        System.out.println("Corpus material " + cM);
     }
 
 
@@ -80,7 +79,7 @@ public abstract class DeviceWhithOS {
     }
 
     public void load() {
-              print("I am Load. My name " + opSystem);
+              print("I am Load. My OS " + opSystem);
     }
 
     public  void on(){
