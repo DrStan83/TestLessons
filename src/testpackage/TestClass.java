@@ -37,5 +37,31 @@ public class TestClass {
         zbook.aboutModel();
 
 
+
+        ToshibaSatelit satelit = new ToshibaSatelit();
+        satelit.setOpSystem("Windows 8");
+        satelit.setName("Satelit 15.6");
+        satelit.setHdd(500);
+        satelit.setRam(8192);
+        satelit.setCdSSD(250);
+        satelit.setCdRom(true);
+        satelit.setmBoard("Toshiba XM777");
+        satelit.setWiFi(true);
+        satelit.setVolume(5);
+        satelit.setCorpusMaterial("Aluminium");
+        satelit.setVersionUsb(3.0);
+        satelit.setIntegratedVieo(false);
+        satelit.setBlueToothVer(4.0);
+        satelit.setSpeakerPower_Om(7);
+
+
+        satelit.on();
+        satelit.load();
+        satelit.connectWiFi(true);
+        satelit.off();
+        satelit.readCD();
+        satelit.batteryCharge();
+        satelit.playSound();
+        satelit.BlueToothOn();
     }
 }
