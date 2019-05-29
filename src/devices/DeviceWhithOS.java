@@ -7,6 +7,30 @@ public abstract class DeviceWhithOS {
     protected String corpusMaterial;
     protected int ram;
     protected int hdd;
+  //  public static int ramSlot = 2;
+    public static int mFunCooller;
+    public static int allRam;
+
+    public static void addRam(int ram2){
+        if(ram2 > 8192){
+           print("Max memory size in slot 8 GB ");
+        }else{
+            allRam = ram2;
+
+        }
+    }
+
+
+    public static void changeFunCooller(int funCooller){
+        if(funCooller > 6200 || funCooller < 200){
+            print("Max speed 6200 O.min and Min speed 200 ");
+        }else {
+            mFunCooller = funCooller;
+            print("Cooller Fun " + mFunCooller);
+        }
+    }
+
+
 
 
     protected DeviceWhithOS() {
@@ -74,7 +98,7 @@ public abstract class DeviceWhithOS {
     }
 
 
-    protected void print(String str) {
+    public static void print(String str) {
         System.out.println(str);
     }
 

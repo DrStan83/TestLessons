@@ -2,7 +2,7 @@ package toshiba;
 
 import devices.Notebook;
 
-public interface Toshiba  {
+public interface Toshiba extends  Notebook {
 
     void BlueToothOn();
 

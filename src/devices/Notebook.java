@@ -1,6 +1,6 @@
 package devices;
 
-public interface Notebook{
+public interface Notebook extends Computer{
 
 
     void connectWiFi(boolean connectWifi);

@@ -5,7 +5,7 @@ import devices.Computer;
 import devices.DeviceWhithOS;
 import devices.Notebook;
 
-public class AsusZbook extends DeviceWhithOS implements Computer, Notebook, Asus {
+public class AsusZbook extends DeviceWhithOS implements  Asus {
     private String mBoard;
     private boolean cdRom;
     private boolean integratedVideo;
@@ -18,7 +18,8 @@ public class AsusZbook extends DeviceWhithOS implements Computer, Notebook, Asus
     private boolean wiFi;
 
 
-// 1  Notebook
+
+    // 1  Notebook
     public void connectWiFi(boolean connectWifi){
         if(connectWifi== true){
             System.out.println("Wi-Fi connected");

@@ -1,7 +1,9 @@
 package asus;
 
 
-public interface Asus  {
+import devices.Notebook;
+
+public interface Asus extends Notebook {
 
 
    void ScanFinger(boolean fingerScanner);

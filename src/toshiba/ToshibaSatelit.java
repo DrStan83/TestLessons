@@ -1,10 +1,8 @@
 package toshiba;
 
-import devices.Computer;
 import devices.DeviceWhithOS;
-import devices.Notebook;
 
-public class ToshibaSatelit extends DeviceWhithOS implements Computer, Notebook, Toshiba {
+public class ToshibaSatelit extends DeviceWhithOS implements  Toshiba {
 
     private int volume;
 

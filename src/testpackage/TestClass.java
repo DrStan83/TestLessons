@@ -63,5 +63,13 @@ public class TestClass {
         satelit.batteryCharge();
         satelit.playSound();
         satelit.BlueToothOn();
+
+
+        AsusZbook.print("Test String");
+        AsusZbook.addRam(8000);
+        AsusZbook.changeFunCooller(1000);
+
+        ToshibaSatelit.addRam(10000);
+        ToshibaSatelit.changeFunCooller(10);
     }
 }
