@@ -1,5 +1,7 @@
 package devices;
 
+import asus.AsusZbook;
+
 public abstract class DeviceWhithOS {
     protected String opSystem;
     protected String name;
@@ -8,17 +10,31 @@ public abstract class DeviceWhithOS {
     protected int ram;
     protected int hdd;
   //  public static int ramSlot = 2;
-    public static int mFunCooller;
+    public static int mFunCooller = 1200;
     public static int allRam;
 
-    public static void addRam(int ram2){
-        if(ram2 > 8192){
-           print("Max memory size in slot 8 GB ");
-        }else{
-            allRam = ram2;
 
-        }
+
+
+    public static void addRam(int newRam){
+        allRam = newRam;
+        print("Added ram = " + allRam);
     }
+
+    public void ramUpdate(){
+        allRam = allRam + getRam();
+        System.out.println("All Ram select " + allRam);    }
+
+
+
+//    public static void addRam(int ram2){
+//        if(ram2 > 8192){
+//           print("Max memory size in slot 8 GB ");
+//        }else{
+//            allRam = ram2;
+//
+//        }
+//    }
 
 
     public static void changeFunCooller(int funCooller){

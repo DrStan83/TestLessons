@@ -19,6 +19,7 @@ public class AsusZbook extends DeviceWhithOS implements  Asus {
 
 
 
+
     // 1  Notebook
     public void connectWiFi(boolean connectWifi){
         if(connectWifi== true){
