@@ -66,11 +66,11 @@ public class TestClass {
 
 
         AsusZbook.print("Test String");
-        AsusZbook.addRam(7000);
+        AsusZbook.addRam(zbook);
         AsusZbook.changeFunCooller(1000);
-        zbook.ramUpdate();
-        ToshibaSatelit.addRam(10000);
+
+        ToshibaSatelit.addRam(satelit);
         ToshibaSatelit.changeFunCooller(10);
-        satelit.ramUpdate();
+
     }
 }
