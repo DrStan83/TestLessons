@@ -11,12 +11,23 @@ public abstract class DeviceWhithOS {
     protected int hdd;
 
     public static int mFunCooller = 1200;
-    public static int newRam = 8196;
 
-    public static void addRam(DeviceWhithOS dWos){
-        dWos.setRam(newRam + dWos.getRam());
-        System.out.println(dWos + " Updated Ram = " + dWos.getRam() );
+    public static int newRam;
+
+    public void addRam(int newAddRam){
+        newRam = newAddRam;
     }
+
+    public static void updateRam(DeviceWhithOS deviceWhithOS){
+        deviceWhithOS.ram += newRam;
+        System.out.println(deviceWhithOS + "Ram Updated " + deviceWhithOS.ram);
+    }
+
+ //   public static int newRam = 8196;
+ //   public static void addRam(DeviceWhithOS dWos){
+ //       dWos.setRam(newRam + dWos.getRam());
+ //       System.out.println(dWos + " Updated Ram = " + dWos.getRam() );
+ //   }
 
 
 
